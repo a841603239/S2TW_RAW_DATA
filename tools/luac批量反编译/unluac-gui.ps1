@@ -1,13 +1,13 @@
 # unluac 批量反编译 GUI
-# 需要 Java 8+ 和 unluac_2015_06_13.jar 放在本脚本同一目录
+# 需要 Java 8+ 和 unluac_2015_12_23.jar 放在本脚本同一目录
 
 Add-Type -AssemblyName System.Windows.Forms
 Add-Type -AssemblyName System.Drawing
 
 # 找 jar
-$jarPath = Join-Path $PSScriptRoot "unluac_2015_06_13.jar"
+$jarPath = Join-Path $PSScriptRoot "unluac_2015_12_23.jar"
 if (-not (Test-Path $jarPath)) {
-    [System.Windows.Forms.MessageBox]::Show("找不到 unluac_2015_06_13.jar`n请把它和本脚本放在同一目录。", "错误")
+    [System.Windows.Forms.MessageBox]::Show("找不到 unluac_2015_12_23.jar`n请把它和本脚本放在同一目录。", "错误")
     exit
 }
 
